@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Báo Tuổi Trẻ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href=""><img alt="Tin tức, tin nóng, đọc báo điện tử - Tuổi Trẻ Online" src="https://static-tuoitre.tuoitre.vn/tuoitre/web_images/logottonew.svg" width="112" height="36"></a>
+  <ul class="auth-switch">
+    <li>Đăng ký</li>
+    <li>Đăng nhập</li>
+    <li>
+      <img src="Images/user.png" alt="user" class="user-avatar">
+      <ul class="user-menu">
+        <li class="username-display" alt="username"></li>
+        <li class="logout-btn">Đăng xuất</li>
+      </ul>
+    </li>
+  </ul>
+  <h1><a href="">Báo Tuổi Trẻ</a></h1>
+</header>
+
+<nav>
+  <a href="https://www.youtube.com/channel/UC47WI-kZXFf0H_f7pvaNCEQ" target="_blank" rel="nofollow">YouTube</a>
+  <a href="/thoi-su.htm">Thời sự</a>
+  <a href="/phap-luat.htm">Pháp luật</a>
+  <a href="/the-gioi.htm">Thế giới</a>
+  <input type="text" id="searchInput" placeholder="Tìm bài viết..."/>
+</nav>
+
+<main id="articles"></main>
+
+<!-- Modal đăng ký/đăng nhập -->
+<div class="modal">
+  <div class="modal__overlay"></div>
+  <div class="modal__body">
+    <div class="modal__inner">
+      <!-- Form đăng ký -->
+      <div class="auth-form" id="registerForm">
+        <div class="auth-form__container">
+          <div class="auth-form__header">
+            <h3 class="auth-form__heading">Đăng ký</h3>
+            <span class="auth-form__switch-btn">Đăng nhập</span>
+          </div>          
+          <div class="auth-form__group">
+            <input type="text" class="auth-form__input" placeholder="Tên đăng nhập">
+            <input type="email" class="auth-form__input" placeholder="Email">
+            <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+            <div class="auth-form__controls">
+              <button class="btn auth-form__controls-back">TRỞ LẠI</button>
+              <button class="btn btn--primary auth-form__controls-register">ĐĂNG KÝ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form đăng nhập -->
+      <div class="auth-form" id="loginForm">
+        <div class="auth-form__container">
+          <div class="auth-form__header">
+            <h3 class="auth-form__heading">Đăng nhập</h3>
+            <span class="auth-form__switch-btn">Đăng ký</span>
+          </div>          
+          <div class="auth-form__group">
+            <input type="text" class="auth-form__input" placeholder="Tên đăng nhập/email">
+            <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+            <div class="auth-form__controls">
+              <button class="btn auth-form__controls-back">TRỞ LẠI</button>
+              <button class="btn btn--primary auth-form__controls-register">ĐĂNG NHẬP</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+<script src="validation.js"></script>
+</body>
+</html>
